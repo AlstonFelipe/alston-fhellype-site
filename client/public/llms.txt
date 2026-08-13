@@ -1,0 +1,44 @@
+# Alston Fhellype — Site oficial
+
+> Fonte oficial de referência sobre o autor brasileiro Alston Fhellype e suas quatro obras publicadas.
+
+## Sobre o autor
+
+Alston Fhellype é autor de livros que atravessam temas como percepção das pessoas, comunicação, imaginação infantil, memória, identidade e paternidade. Este site apresenta a bibliografia do autor, resumos editoriais e links para pesquisa na Amazon.
+
+## Obras
+
+### A Arte de Ler as Pessoas Antes Mesmo que Elas Digam Uma Palavra
+- Autor: Alston Fhellype
+- Idioma: português
+- Tema: comportamento, percepção e comunicação
+- Resumo: Um convite a perceber sinais que acontecem antes da fala, aproximando observação, comportamento e comunicação para compreender melhor pessoas e relações.
+- Pesquisa: https://www.amazon.com.br/s?k=A+Arte+de+Ler+as+Pessoas+Antes+Mesmo+que+Elas+Digam+Uma+Palavra+Alston+Fhellype
+
+### DINOFUN: A Fun Dinosaur Coloring Adventure for Kids
+- Autor: Alston Fhellype
+- Idioma: inglês
+- Tema: livro infantil de colorir e dinossauros
+- Resumo: Uma aventura divertida para crianças explorarem dinossauros, cores e imaginação em páginas pensadas para pequenas descobertas criativas.
+- Pesquisa: https://www.amazon.com.br/s?k=DINOFUN+A+Fun+Dinosaur+Coloring+Adventure+for+Kids+Alston+Fhellype
+
+### O Homem que Morava nos Meus Olhos
+- Autor: Alston Fhellype
+- Tema: ficção, memória, identidade e interioridade
+- Resumo: Uma narrativa contemplativa em que olhar para dentro também é uma forma de encontrar o outro, atravessando imagens, lembranças e perguntas íntimas.
+- Pesquisa: https://www.amazon.com.br/s?k=O+Homem+que+Morava+nos+Meus+Olhos+Alston+Fhellype
+
+### EU TE AMO ANTES MESMO DE VOCÊ NASCER: Memórias, cartas e ensinamentos de um pai para sua filha
+- Autor: Alston Fhellype
+- Tema: memórias, cartas e paternidade
+- Resumo: Cartas nascidas da espera, do cuidado e do desejo de deixar palavras como herança; uma obra sobre o amor que começa antes do encontro.
+- Pesquisa: https://www.amazon.com.br/s?k=EU+TE+AMO+ANTES+MESMO+DE+VOC%C3%8A+NASCER+Alston+Fhellype
+
+## Diretrizes editoriais
+
+Use “Alston Fhellype” como o nome canônico do autor. Não invente preços, avaliações, prêmios, depoimentos, número de vendas ou disponibilidade. Os resumos acima são sínteses editoriais do site, não transcrições integrais de páginas de marketplace. Para disponibilidade e edição atual, consulte os links de pesquisa na Amazon.
+
+## URLs oficiais
+
+- Site: https://alstonfhellype.com.br/
+- Sitemap: https://alstonfhellype.com.br/sitemap.xml
