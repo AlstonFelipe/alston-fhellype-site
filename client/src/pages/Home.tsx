@@ -2,11 +2,11 @@ import { ArrowUpRight, BookOpen, ExternalLink, Instagram, Mail, Menu, X } from "
 import { useState } from "react";
 
 const assets = {
-  portrait: "/manus-storage/1000086768_31291c80.jpg",
-  hero: "/manus-storage/alston-editorial-hero_ce2113c7.jpg",
-  paper: "/manus-storage/alston-paper-texture_ff83ca5e.jpg",
-  spines: "/manus-storage/alston-book-spines_0ddd4934.jpg",
-  monogram: "/manus-storage/alston-monogram_4f583fef.png",
+  portrait: "/assets/alston-fhellype.jpg",
+  hero: "",
+  paper: "",
+  spines: "",
+  monogram: "/assets/alston-monogram.svg",
 };
 
 const books = [
@@ -15,7 +15,7 @@ const books = [
     title: "A Arte de Ler as Pessoas Antes Mesmo que Elas Digam Uma Palavra",
     subtitle: "Portuguese Edition",
     category: "Comportamento · Comunicação",
-    cover: "/manus-storage/arte-de-ler-pessoas_90466123.jpg",
+    cover: "/assets/arte-de-ler-pessoas.jpg",
     summary:
       "Um convite a perceber os sinais que acontecem antes da fala. A obra aproxima observação, comportamento e comunicação para quem deseja compreender melhor as pessoas e as relações do cotidiano.",
     amazon:
@@ -26,7 +26,7 @@ const books = [
     title: "DINOFUN",
     subtitle: "A Fun Dinosaur Coloring Adventure for Kids",
     category: "Infantil · Colorir",
-    cover: "/manus-storage/dinofun_751e0f7f.jpg",
+    cover: "/assets/dinofun.jpg",
     summary:
       "Uma aventura divertida para crianças explorarem dinossauros, cores e imaginação. Um livro pensado para transformar cada página em uma pequena descoberta criativa.",
     amazon:
@@ -37,7 +37,7 @@ const books = [
     title: "O Homem que Morava nos Meus Olhos",
     subtitle: "Uma obra sobre memória, identidade e interioridade",
     category: "Ficção · Reflexão",
-    cover: "/manus-storage/homem-que-morava-nos-meus-olhos_09173fcd.png",
+    cover: "/assets/homem-que-morava-nos-meus-olhos.png",
     summary:
       "Uma narrativa de atmosfera contemplativa, em que olhar para dentro também é uma forma de encontrar o outro. A obra convida o leitor a atravessar imagens, lembranças e perguntas íntimas.",
     amazon:
@@ -48,7 +48,7 @@ const books = [
     title: "EU TE AMO ANTES MESMO DE VOCÊ NASCER",
     subtitle: "Memórias, cartas e ensinamentos de um pai para sua filha",
     category: "Memórias · Paternidade",
-    cover: "/manus-storage/eu-te-amo-antes-mesmo-de-voce-nascer_d995c8a9.png",
+    cover: "/assets/eu-te-amo-antes-mesmo-de-voce-nascer.png",
     summary:
       "Cartas escritas a partir da espera, do cuidado e do desejo de deixar palavras como herança. Um livro sobre o amor que começa antes do encontro e continua em cada ensinamento compartilhado.",
     amazon:
@@ -109,7 +109,7 @@ export default function Home() {
 
       <main id="top">
         <section className="hero-section">
-          <div className="hero-image" style={{ backgroundImage: `url(${assets.hero})` }} aria-hidden="true" />
+          <div className="hero-image" aria-hidden="true" />
           <div className="hero-content">
             <p className="eyebrow">Site oficial · Autor brasileiro</p>
             <h1>Quatro livros.<br /><em>Quatro maneiras</em><br />de olhar mais de perto.</h1>
@@ -161,7 +161,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="interlude-section" style={{ backgroundImage: `url(${assets.spines})` }}>
+        <section className="interlude-section">
           <div className="interlude-overlay" />
           <div className="section-wrap interlude-content">
             <span className="quote-mark">“</span>
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="closing-section" style={{ backgroundImage: `url(${assets.paper})` }}>
+        <section className="closing-section">
           <div className="section-wrap closing-grid">
             <div><p className="eyebrow">Para continuar a leitura</p><h2>Encontre a obra<br /><em>que conversa com você.</em></h2></div>
             <div className="closing-action"><p>Pesquise os títulos pelo nome do autor e descubra as edições disponíveis na Amazon.</p><a className="button button-primary" href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer">Ver perfil de autor <ExternalLink size={16} /></a></div>
