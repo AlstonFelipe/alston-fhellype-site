@@ -199,7 +199,7 @@ export default function Home() {
         <div className="section-wrap footer-top">
           <a className="brand brand-footer" href="#top"><img src={assets.monogram} alt="" /><span><strong>Alston</strong> Fhellype</span></a>
           <p>Escrever é criar uma nova lente.<br />Obrigado por passar por aqui.</p>
-          <div className="footer-links"><a href="mailto:alstonfhellype@gmail.com"><Mail size={15} /> E-mail</a><a href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer"><BookOpen size={15} /> Amazon</a><a href="#top"><Instagram size={15} /> Instagram</a></div>
+          <div className="footer-links"><a href="mailto:alstonfhellype@gmail.com"><Mail size={15} /> E-mail</a><a href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer"><BookOpen size={15} /> Amazon</a><a href="https://www.instagram.com/alstonfhellype/" target="_blank" rel="noreferrer"><Instagram size={15} /> Instagram</a></div>
         </div>
         <div className="section-wrap footer-bottom"><span>© {new Date().getFullYear()} Alston Fhellype</span><span>Site oficial do autor</span><a href="#top">Voltar ao topo ↑</a></div>
       </footer>
