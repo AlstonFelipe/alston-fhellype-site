@@ -54,6 +54,17 @@ const books = [
     amazon:
       "https://www.amazon.com.br/s?k=EU+TE+AMO+ANTES+MESMO+DE+VOC%C3%8A+NASCER+Alston+Fhellype",
   },
+  {
+    number: "05",
+    title: "O NÃO QUE NINGUÉM ESPERA",
+    subtitle: "Limites, assertividade e a força de dizer não",
+    category: "Comportamento · Autocuidado",
+    cover: "/assets/o-nao-que-ninguem-espera.jpg",
+    summary:
+      "Uma reflexão prática para quem aprendeu a dizer sim para tudo e acabou se afastando da própria vontade. Com situações cotidianas e ferramentas de assertividade, o livro mostra como estabelecer limites sem deixar de ser uma pessoa boa.",
+    amazon:
+      "https://www.amazon.com.br/s?k=O+N%C3%83O+QUE+NINGU%C3%89M+ESPERA+Alston+Fhellype",
+  },
 ];
 
 function AmazonLink({ href, children = "Pesquisar na Amazon" }: { href: string; children?: React.ReactNode }) {
@@ -112,7 +123,7 @@ export default function Home() {
           <div className="hero-image" aria-hidden="true" />
           <div className="hero-content">
             <p className="eyebrow">Site oficial · Autor brasileiro</p>
-            <h1>Quatro livros.<br /><em>Quatro maneiras</em><br />de olhar mais de perto.</h1>
+            <h1>Histórias que<br /><em>despertam olhares</em><br />e permanecem.</h1>
             <p className="hero-lede">Conheça o universo de <strong>Alston Fhellype</strong>: ideias sobre pessoas, aventuras para crianças, narrativas de interioridade e cartas que nascem do amor.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#livros">Explorar os livros <ArrowUpRight size={17} /></a>
@@ -128,7 +139,7 @@ export default function Home() {
             <h2>Escrever é criar<br /><em>uma nova lente.</em></h2>
             <div className="intro-copy">
               <p>Entre a observação das relações, o encantamento da infância e a delicadeza da memória, Alston Fhellype constrói livros que começam com uma pergunta simples: <strong>o que ainda podemos perceber?</strong></p>
-              <p>Esta é a página oficial para conhecer suas quatro obras e encontrar cada título na Amazon.</p>
+              <p>Esta é a página oficial para conhecer suas obras, acompanhar sua trajetória e encontrar cada título na Amazon.</p>
             </div>
           </div>
         </section>
@@ -199,7 +210,7 @@ export default function Home() {
         <div className="section-wrap footer-top">
           <a className="brand brand-footer" href="#top"><img src={assets.monogram} alt="" /><span><strong>Alston</strong> Fhellype</span></a>
           <p>Escrever é criar uma nova lente.<br />Obrigado por passar por aqui.</p>
-          <div className="footer-links"><a href="mailto:alstonfhellype@gmail.com"><Mail size={15} /> E-mail</a><a href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer"><BookOpen size={15} /> Amazon</a><a href="https://www.instagram.com/alstonfhellype/" target="_blank" rel="noreferrer"><Instagram size={15} /> Instagram</a></div>
+          <div className="footer-links"><a href="mailto:alstonfhellype@gmail.com"><Mail size={15} /> E-mail</a><a href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer"><BookOpen size={15} /> Amazon</a><a href="#top"><Instagram size={15} /> Instagram</a></div>
         </div>
         <div className="section-wrap footer-bottom"><span>© {new Date().getFullYear()} Alston Fhellype</span><span>Site oficial do autor</span><a href="#top">Voltar ao topo ↑</a></div>
       </footer>

@@ -8,7 +8,7 @@ A pesquisa pública da Amazon Brasil foi tentada diretamente, mas as páginas re
 2. **DINOFUN: A Fun Dinosaur Coloring Adventure for Kids** — livro infantil de colorir em inglês, com aventura temática de dinossauros e público indicado de 3 a 8 anos.
 3. **O Homem que Morava nos Meus Olhos** — obra de ficção/reflexão literária, apresentada na captura com atmosfera visual de memória, identidade e interioridade.
 4. **EU TE AMO ANTES MESMO DE VOCÊ NASCER: Memórias, cartas e ensinamentos de um pai para sua filha** — obra afetiva em formato de memórias e cartas, centrada no vínculo entre pai e filha antes do nascimento.
-5. **O NÃO QUE NINGUÉM ESPERA: Aprendendo a dizer não mesmo quando seu cérebro obriga a dizer sim** — Obra de auto ajuda à todos aqueles que não conseguem dizer não, e se prejicando por causa disso.
+
 A mesma captura mostra os quatro autores como **Alston Fhellype**. Os preços não serão reproduzidos no site, conforme solicitado pelo autor. Os botões serão apresentados como **Pesquisar na Amazon**, usando buscas por título e autor, sem prometer disponibilidade, preço ou posição de resultado.
 
 ## Critério de conteúdo
