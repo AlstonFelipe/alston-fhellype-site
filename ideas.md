@@ -55,7 +55,7 @@ Entradas suaves por opacidade e deslocamento vertical curto, com atraso escalona
 ### Brand Voice
 Headlines e CTAs devem soar convidativos, precisos e pessoais, sem promessas genéricas. O texto fala como quem abre uma conversa e oferece uma página.
 
-- “Quatro livros. Quatro maneiras de olhar mais de perto.”
+- “Cinco livros. Cinco maneiras de olhar mais de perto.”
 - “Encontre a obra que conversa com o seu momento.”
 
 ### Wordmark & Logo
