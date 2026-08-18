@@ -1,0 +1,5 @@
+# Diretrizes de rastreamento — site oficial de Alston Fhellype
+User-agent: *
+Allow: /
+
+Sitemap: https://alstonfhellype.com.br/sitemap.xml
