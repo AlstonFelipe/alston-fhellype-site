@@ -1,0 +1,34 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "https://7f0548f6b28a1758d9bf7be630d36cb4.artifacts.cloudflare.net/git/prod/M5KgLhyk9JErAsGHm2jx5o.git",
+    "expiration": "2026-08-14T17:14:32.465Z",
+    "token": "art_v2_x_995426232ffad66dde70c0ff1d1dcfa2e3de4ff8?expires=1786727672",
+    "backend": "GIT_BACKEND_ARTIFACTS"
+  },
+  "name": "alston-fhellype-site",
+  "path": "/home/ubuntu/alston-fhellype-site",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "PjfNvu83K4SoqDdpQMfMSW",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "g7MLGg9JePHbHPtF6EhJHw",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Guilherme Silva",
+    "OWNER_OPEN_ID": "6qKEHXkZvPkuui7AjzwDmb",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "cafa9e7a-534e-44d9-914f-3e02305f2db9",
+    "VITE_APP_ID": "M5KgLhyk9JErAsGHm2jx5o",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Alston Fhellype | Autor",
+    "VITE_FRONTEND_FORGE_API_KEY": "VKfkCXhPEjTMvwZoevh9F3",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
