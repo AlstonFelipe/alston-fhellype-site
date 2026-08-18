@@ -266,7 +266,7 @@ export default function Home() {
             <p>Escrever é criar uma nova lente.<br />Quer conversar sobre uma obra? Envie uma mensagem.</p>
             <div className="footer-links"><a href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer"><BookOpen size={15} /> Amazon</a><a href="https://www.instagram.com/alstonfhellype/" target="_blank" rel="noreferrer"><Instagram size={15} /> Instagram</a></div>
           </div>
-          <form className="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1">
+          <form className="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
             <input type="hidden" name="form-name" value="contact" />
             <p className="form-kicker">Fale com o autor</p>
             <h2>Uma mensagem<br /><em>pode começar aqui.</em></h2>
