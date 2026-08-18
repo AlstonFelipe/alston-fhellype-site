@@ -1,4 +1,4 @@
-import { ArrowUpRight, BookOpen, ExternalLink, Instagram, Mail, Menu, X } from "lucide-react";
+import { ArrowUpRight, BookOpen, CheckCircle2, ExternalLink, Instagram, Menu, Send, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const assets = {
@@ -100,6 +100,11 @@ function AmazonLink({ href, children = "Pesquisar na Amazon" }: { href: string; 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedBook, setSelectedBook] = useState<(typeof books)[number] | null>(null);
+  const [formSent, setFormSent] = useState(false);
+
+  useEffect(() => {
+    setFormSent(new URLSearchParams(window.location.search).get("sent") === "1");
+  }, []);
 
   useEffect(() => {
     if (!selectedBook) return;
@@ -256,9 +261,22 @@ export default function Home() {
 
       <footer id="contato" className="site-footer">
         <div className="section-wrap footer-top">
-          <a className="brand brand-footer" href="#top"><img src={assets.monogram} alt="" /><span><strong>Alston</strong> Fhellype</span></a>
-          <p>Escrever é criar uma nova lente.<br />Obrigado por passar por aqui.</p>
-          <div className="footer-links"><a href="mailto:alstonfhellype@gmail.com"><Mail size={15} /> E-mail</a><a href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer"><BookOpen size={15} /> Amazon</a><a href="#top"><Instagram size={15} /> Instagram</a></div>
+          <div className="footer-intro">
+            <a className="brand brand-footer" href="#top"><img src={assets.monogram} alt="" /><span><strong>Alston</strong> Fhellype</span></a>
+            <p>Escrever é criar uma nova lente.<br />Quer conversar sobre uma obra? Envie uma mensagem.</p>
+            <div className="footer-links"><a href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer"><BookOpen size={15} /> Amazon</a><a href="https://www.instagram.com/alstonfhellype/" target="_blank" rel="noreferrer"><Instagram size={15} /> Instagram</a></div>
+          </div>
+          <form className="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1">
+            <input type="hidden" name="form-name" value="contact" />
+            <p className="form-kicker">Fale com o autor</p>
+            <h2>Uma mensagem<br /><em>pode começar aqui.</em></h2>
+            <p className="hidden-field"><label>Não preencher: <input name="bot-field" /></label></p>
+            {formSent && <p className="form-success" role="status"><CheckCircle2 size={17} /> Mensagem enviada. Obrigado pelo contato.</p>}
+            <div className="form-row"><label>Nome<input type="text" name="name" placeholder="Seu nome" required /></label><label>E-mail<input type="email" name="email" placeholder="voce@email.com" required /></label></div>
+            <label>Assunto<input type="text" name="subject" placeholder="Sobre o que você gostaria de falar?" required /></label>
+            <label>Mensagem<textarea name="message" placeholder="Escreva sua mensagem..." rows={4} required /></label>
+            <button className="button button-primary form-submit" type="submit">Enviar mensagem <Send size={16} /></button>
+          </form>
         </div>
         <div className="section-wrap footer-bottom"><span>© {new Date().getFullYear()} Alston Fhellype</span><span>Site oficial do autor</span><a href="#top">Voltar ao topo ↑</a></div>
       </footer>
