@@ -1,5 +1,5 @@
 import { ArrowUpRight, BookOpen, ExternalLink, Instagram, Mail, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const assets = {
   portrait: "/assets/alston-fhellype.jpg",
@@ -37,7 +37,7 @@ const books = [
     title: "O Homem que Morava nos Meus Olhos",
     subtitle: "Uma obra sobre memória, identidade e interioridade",
     category: "Ficção · Reflexão",
-    cover: "/assets/homem-que-morava-nos-meus-olhos.png",
+    cover: "/assets/homem-que-morava-nos-meus-olhos.jpg",
     summary:
       "Uma narrativa de atmosfera contemplativa, em que olhar para dentro também é uma forma de encontrar o outro. A obra convida o leitor a atravessar imagens, lembranças e perguntas íntimas.",
     amazon:
@@ -65,6 +65,28 @@ const books = [
     amazon:
       "https://www.amazon.com.br/s?k=O+N%C3%83O+QUE+NINGU%C3%89M+ESPERA+Alston+Fhellype",
   },
+  {
+    number: "06",
+    title: "SEU GATO FALA! E AGORA VOCÊ ENTENDE",
+    subtitle: "Um guia prático para entender a linguagem corporal, os sinais e o comportamento do seu gato",
+    category: "Comportamento · Animais",
+    cover: "/assets/seu-gato-fala.jpg",
+    summary:
+      "Um guia acessível para observar melhor os sinais, os gestos e as formas de comunicação dos gatos. A obra aproxima convivência, cuidado e comportamento para ajudar cada leitor a compreender seu companheiro felino.",
+    amazon:
+      "https://www.amazon.com.br/s?k=Seu+Gato+Fala+E+Agora+Voc%C3%AA+Entende+Alston+Fhellype",
+  },
+  {
+    number: "07",
+    title: "SEU CACHORRO FALA! E AGORA VOCÊ ENTENDE",
+    subtitle: "Um guia prático para entender a linguagem corporal, os sinais e o comportamento do seu cão",
+    category: "Comportamento · Animais",
+    cover: "/assets/seu-cachorro-fala.jpg",
+    summary:
+      "Um guia prático para reconhecer os sinais do corpo, os sons e os comportamentos que fazem parte da comunicação dos cães. Uma leitura para fortalecer a convivência, o cuidado e o vínculo entre pessoas e animais.",
+    amazon:
+      "https://www.amazon.com.br/s?k=Seu+Cachorro+Fala+E+Agora+Voc%C3%AA+Entende+Alston+Fhellype",
+  },
 ];
 
 function AmazonLink({ href, children = "Pesquisar na Amazon" }: { href: string; children?: React.ReactNode }) {
@@ -77,6 +99,20 @@ function AmazonLink({ href, children = "Pesquisar na Amazon" }: { href: string; 
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedBook, setSelectedBook] = useState<(typeof books)[number] | null>(null);
+
+  useEffect(() => {
+    if (!selectedBook) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setSelectedBook(null);
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", closeOnEscape);
+      document.body.style.overflow = "";
+    };
+  }, [selectedBook]);
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -157,7 +193,10 @@ export default function Home() {
               {books.map((book) => (
                 <article className="book-item" key={book.number}>
                   <div className="book-index">{book.number}</div>
-                  <div className="cover-frame"><img src={book.cover} alt={`Capa de ${book.title}`} /></div>
+                  <button className="cover-frame cover-button" type="button" onClick={() => setSelectedBook(book)} aria-label={`Ampliar a capa de ${book.title}`}>
+                    <img src={book.cover} alt={`Capa de ${book.title}`} />
+                    <span className="cover-zoom-hint">Ampliar capa</span>
+                  </button>
                   <div className="book-details">
                     <p className="book-category">{book.category}</p>
                     <h3>{book.title}</h3>
@@ -204,6 +243,15 @@ export default function Home() {
             <div className="closing-action"><p>Pesquise os títulos pelo nome do autor e descubra as edições disponíveis na Amazon.</p><a className="button button-primary" href="https://www.amazon.com.br/s?k=Alston+Fhellype" target="_blank" rel="noreferrer">Ver perfil de autor <ExternalLink size={16} /></a></div>
           </div>
         </section>
+        {selectedBook && (
+          <div className="book-lightbox" role="dialog" aria-modal="true" aria-label={`Capa ampliada de ${selectedBook.title}`} onClick={() => setSelectedBook(null)}>
+            <div className="book-lightbox-panel" onClick={(event) => event.stopPropagation()}>
+              <button className="lightbox-close" type="button" onClick={() => setSelectedBook(null)} aria-label="Fechar capa ampliada"><X size={22} /></button>
+              <img src={selectedBook.cover} alt={`Capa ampliada de ${selectedBook.title}`} />
+              <div className="lightbox-caption"><span>{selectedBook.category}</span><strong>{selectedBook.title}</strong><small>Clique fora da imagem ou pressione Esc para fechar.</small></div>
+            </div>
+          </div>
+        )}
       </main>
 
       <footer id="contato" className="site-footer">
