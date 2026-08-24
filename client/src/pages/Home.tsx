@@ -2,11 +2,11 @@ import { ArrowUpRight, BookOpen, CheckCircle2, ExternalLink, Instagram, Menu, Se
 import { useEffect, useState } from "react";
 
 const assets = {
-  portrait: "/assets/alston-fhellype.jpg",
-  hero: "",
-  paper: "",
-  spines: "",
-  monogram: "/assets/alston-monogram.svg",
+  portrait: "/assets/alston-portrait.jpg",
+  hero: "/assets/alston-editorial-hero.jpg",
+  paper: "/assets/alston-paper-texture.jpg",
+  spines: "/assets/alston-book-spines.jpg",
+  monogram: "/assets/alston-monogram.png",
 };
 
 const books = [
@@ -86,6 +86,28 @@ const books = [
       "Um guia prático para reconhecer os sinais do corpo, os sons e os comportamentos que fazem parte da comunicação dos cães. Uma leitura para fortalecer a convivência, o cuidado e o vínculo entre pessoas e animais.",
     amazon:
       "https://www.amazon.com.br/s?k=Seu+Cachorro+Fala+E+Agora+Voc%C3%AA+Entende+Alston+Fhellype",
+  },
+  {
+    number: "08",
+    title: "O QUE EU GOSTARIA QUE TIVESSEM ME CONTADO ANTES",
+    subtitle: "Mais de 1000 conselhos praticos sobre finanças, carreira, casa e relacionamento para todas as fases da vida",
+    category: "Conselhos · Evolução",
+    cover: "/assets/conselhos.jpg",
+    summary:
+      "O Que Eu Gostaria Que Tivessem Me Contado Antes" é um guia prático, direto e indispensável que reúne mais de 1.000 conselhos essenciais sobre vida, dinheiro, carreira, família, casa, saúde e relacionamentos — organizados estrategicamente dos 5 aos 80 anos.",
+    amazon:
+      "https://www.amazon.com.br/GOSTARIA-TIVESSEM-CONTADO-ANTES-relacionamentos/dp/B0HFTVWZK3/ref=sr_1_4?crid=2X50K7XI8WJRV&dib=eyJ2IjoiMSJ9.hGXxsS_12Fk1q-8KJcKW99A_Psb28MlIHVPuINrdAVh9tDmvlfExEv2wqYJpfMEVJmcec4U_2SgGwEw3vEyY89nf3CLqeU0C6nhQoEQ5qzKgOKT_srzwv7oO-zsGTbHgPUo-3A8vr5BHpW5C7F2Rj_b7_nrshpXZz2uoYkxDnuCCkF0HLI5wsm9wpVfqgJ1BMBqZ_q68TaYMs7JmSBPXoXuoZ72zr4DtX7uqgMeqeO0.7bFUrFpfKIW0E08kvrKMN-YrZo2yWEtyS2q8VVPkch0&dib_tag=se&keywords=alston+fhellype&qid=1787591406&sprefix=%2Caps%2C185&sr=8-4&ufe=app_do%3Aamzn1.fos.88ac1f0f-cd00-42df-b2ac-542b26a29c3a",
+  },
+  {
+    number: "09",
+    title: "O SEGREDO DA FALA INVISÍVEL",
+    subtitle: "Como Ler os Lábios com Precisão Mesmo Sem Ouvir uma Única Palavra",
+    category: "Comportamento · Leitura Lábial",
+    cover: "/assets/leituralabial.jpg",
+    summary:
+      "Em O Segredo da Fala Invisível, Alston Fhellype apresenta um método didático, progressivo e livre de falsas promessas para quem deseja aprender a ler a fala do zero com clareza, ética e segurança.",
+    amazon:
+      "https://www.amazon.com.br/Segredo-Fala-Invis%C3%ADvel-Precis%C3%A3o-Portuguese/dp/B0HFYMKK7V/ref=sr_1_7?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.hGXxsS_12Fk1q-8KJcKW99A_Psb28MlIHVPuINrdAVh9tDmvlfExEv2wqYJpfMEVJmcec4U_2SgGwEw3vEyY89nf3CLqeU0C6nhQoEQ5qzKgOKT_srzwv7oO-zsGTbHgPUo-3A8vr5BHpW5C7F2Rj_b7_nrshpXZz2uoYkxDnuCCkF0HLI5wsm9wpVfqgJ1BMBqZ_q68TaYMs7JmSBPXoXuoZ72zr4DtX7uqgMeqeO0.7bFUrFpfKIW0E08kvrKMN-YrZo2yWEtyS2q8VVPkch0&dib_tag=se&keywords=alston+fhellype&qid=1787591956&sr=8-7&ufe=app_do%3Aamzn1.fos.2fb4d624-b7be-441e-af6d-3c953cfae5bf",
   },
 ];
 
