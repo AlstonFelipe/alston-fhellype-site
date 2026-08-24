@@ -94,7 +94,7 @@ const books = [
     category: "Conselhos · Evolução",
     cover: "/assets/conselhos.jpg",
     summary:
-      "O Que Eu Gostaria Que Tivessem Me Contado Antes" é um guia prático, direto e indispensável que reúne mais de 1.000 conselhos essenciais sobre vida, dinheiro, carreira, família, casa, saúde e relacionamentos — organizados estrategicamente dos 5 aos 80 anos.",
+      "O Que Eu Gostaria Que Tivessem Me Contado Antes é um guia prático, direto e indispensável que reúne mais de 1.000 conselhos essenciais sobre vida, dinheiro, carreira, família, casa, saúde e relacionamentos — organizados estrategicamente dos 5 aos 80 anos.",
     amazon:
       "https://www.amazon.com.br/GOSTARIA-TIVESSEM-CONTADO-ANTES-relacionamentos/dp/B0HFTVWZK3/ref=sr_1_4?crid=2X50K7XI8WJRV&dib=eyJ2IjoiMSJ9.hGXxsS_12Fk1q-8KJcKW99A_Psb28MlIHVPuINrdAVh9tDmvlfExEv2wqYJpfMEVJmcec4U_2SgGwEw3vEyY89nf3CLqeU0C6nhQoEQ5qzKgOKT_srzwv7oO-zsGTbHgPUo-3A8vr5BHpW5C7F2Rj_b7_nrshpXZz2uoYkxDnuCCkF0HLI5wsm9wpVfqgJ1BMBqZ_q68TaYMs7JmSBPXoXuoZ72zr4DtX7uqgMeqeO0.7bFUrFpfKIW0E08kvrKMN-YrZo2yWEtyS2q8VVPkch0&dib_tag=se&keywords=alston+fhellype&qid=1787591406&sprefix=%2Caps%2C185&sr=8-4&ufe=app_do%3Aamzn1.fos.88ac1f0f-cd00-42df-b2ac-542b26a29c3a",
   },
