@@ -113,12 +113,12 @@ const books = [
     number: "10",
     title: "DEUS SEMPRE ESTEVE PRESENTE EM SUA VIDA",
     subtitle: "CObserve os detalhes: uma reflexão cristã sobre fé, presença e recomeços.",
-    category: "Observação, e Fé em Deus",
+    category: "Observação · Fé em Deus",
     cover: "/assets/livroDeus.jpg",
     summary:
       "Ao longo de 19 capítulos, você encontrará reflexões sobre fé, silêncio, coincidências, livramentos, portas fechadas, encontros, dor, gratidão, escolhas e recomeços.",
     amazon:
-      "https://www.amazon.com.br/dp/B0HHKY1GV6/ref=sr_1_3?crid=IHHKD26MF32P&dib=eyJ2IjoiMSJ9.Osy7pdv9JpnEOBLUkgCwP-IjQJV3bbNJ8SpZ0t1agLLKemCv4LatVgEvYF15er8wuYm5c1gxWGPeL7pUUJxxfSYySDABRA3sZc4gn9YtHaAnUcLm_9sEVUSXEZHnX5SAeAAYK9-VCsG8ENhwKjEJe2zPKzhm_id5RvWzTtjrjy9mrsgih50MBOnlSq5MVoK2tvHkgdkSQukuoCzmujZC67T_ptPMEw8DkAnDOgOTOXW7MGCFA1egZx5QE4Ic2axf.saQNiZFksSwrXPhI_sYi5pmfXCEMt0QZN6n2AclN-cI&dib_tag=se&keywords=alston+fhellype&qid=1788448323&sprefix=%2Caps%2C297&sr=8-3&ufe=app_do%3Aamzn1.fos.2fb4d624-b7be-441e-af6d-3c953cfae5bf",
+      "https://www.amazon.com.br/DEUS-SEMPRE-ESTEVE-PRESENTE-VIDA-ebook/dp/B0HHKY64ZR/ref=sr_1_4?crid=IHHKD26MF32P&dib=eyJ2IjoiMSJ9.Osy7pdv9JpnEOBLUkgCwP_FD0mp9KoHbmVPM6D88H8fS9R0-CvOydGboCsVyTKaGuYm5c1gxWGPeL7pUUJxxfSYySDABRA3sZc4gn9YtHaAnUcLm_9sEVUSXEZHnX5SAeAAYK9-VCsG8ENhwKjEJe2zPKzhm_id5RvWzTtjrjy9mrsgih50MBOnlSq5MVoK2tvHkgdkSQukuoCzmujZC67T_ptPMEw8DkAnDOgOTOXW7MGCFA1egZx5QE4Ic2axf.mFIjEC5k5bS0ASXjEGkoGjvpOd_skQMQKN-qlqSKw30&dib_tag=se&keywords=alston+fhellype&qid=1788450048&sprefix=%2Caps%2C297&sr=8-4",
   },
 ];
 
