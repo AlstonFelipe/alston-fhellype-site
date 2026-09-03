@@ -109,6 +109,17 @@ const books = [
     amazon:
       "https://www.amazon.com.br/Segredo-Fala-Invis%C3%ADvel-Precis%C3%A3o-Portuguese/dp/B0HFYMKK7V/ref=sr_1_7?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.hGXxsS_12Fk1q-8KJcKW99A_Psb28MlIHVPuINrdAVh9tDmvlfExEv2wqYJpfMEVJmcec4U_2SgGwEw3vEyY89nf3CLqeU0C6nhQoEQ5qzKgOKT_srzwv7oO-zsGTbHgPUo-3A8vr5BHpW5C7F2Rj_b7_nrshpXZz2uoYkxDnuCCkF0HLI5wsm9wpVfqgJ1BMBqZ_q68TaYMs7JmSBPXoXuoZ72zr4DtX7uqgMeqeO0.7bFUrFpfKIW0E08kvrKMN-YrZo2yWEtyS2q8VVPkch0&dib_tag=se&keywords=alston+fhellype&qid=1787591956&sr=8-7&ufe=app_do%3Aamzn1.fos.2fb4d624-b7be-441e-af6d-3c953cfae5bf",
   },
+  {
+    number: "10",
+    title: "DEUS SEMPRE ESTEVE PRESENTE EM SUA VIDA",
+    subtitle: "CObserve os detalhes: uma reflexão cristã sobre fé, presença e recomeços.",
+    category: "Observação, e Fé em Deus",
+    cover: "/assets/livroDeus.jpg",
+    summary:
+      "Ao longo de 19 capítulos, você encontrará reflexões sobre fé, silêncio, coincidências, livramentos, portas fechadas, encontros, dor, gratidão, escolhas e recomeços.",
+    amazon:
+      "https://www.amazon.com.br/dp/B0HHKY1GV6/ref=sr_1_3?crid=IHHKD26MF32P&dib=eyJ2IjoiMSJ9.Osy7pdv9JpnEOBLUkgCwP-IjQJV3bbNJ8SpZ0t1agLLKemCv4LatVgEvYF15er8wuYm5c1gxWGPeL7pUUJxxfSYySDABRA3sZc4gn9YtHaAnUcLm_9sEVUSXEZHnX5SAeAAYK9-VCsG8ENhwKjEJe2zPKzhm_id5RvWzTtjrjy9mrsgih50MBOnlSq5MVoK2tvHkgdkSQukuoCzmujZC67T_ptPMEw8DkAnDOgOTOXW7MGCFA1egZx5QE4Ic2axf.saQNiZFksSwrXPhI_sYi5pmfXCEMt0QZN6n2AclN-cI&dib_tag=se&keywords=alston+fhellype&qid=1788448323&sprefix=%2Caps%2C297&sr=8-3&ufe=app_do%3Aamzn1.fos.2fb4d624-b7be-441e-af6d-3c953cfae5bf",
+  },
 ];
 
 function AmazonLink({ href, children = "Pesquisar na Amazon" }: { href: string; children?: React.ReactNode }) {
